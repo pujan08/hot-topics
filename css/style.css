@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:wght@700|Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap');
+
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+* 
+{
+    box-sizing: border-box;     
+}
+
+
+body
+{
+    font-family: 'Lemonada', cursive;   
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;        
+}
+
+h1
+{
+    line-height: 1;
+   font-family: 'Oswald', sans-serif;
+	font-size:3rem;
+}
+
+h4
+{
+    font-family: 'Oswald', sans-serif;
+    font-size:1.5rem;    
+}
+
+.masthead
+.box,
+.footer .box 
+{
+    padding: 2rem 2rem;
+}
+
+.bgmain .box 
+{
+    padding: 0.5rem;
+    color: #666;
+}
+
+
+header
+{
+    font-size: 1rem;   
+}
+
+
+.masthead
+{
+    background-image: url(../img/2.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+	object-position: top;
+	background-blend-mode: multiply;
+}
+
+
+.textdesign 
+{
+	text-align: center;
+	color:blue;
+    font-size: 30px;
+	padding-bottom:5px;
+	text-shadow: 1px 1px black;	
+}
+.logo img
+{	
+		text-align: center;	
+		width:100px;
+		height:100px;
+		object-fit: cover;
+		object-position: bottom;				
+}
+
+
+.navigation ul
+{    
+    list-style: none;
+    padding:0.5% 2%;
+}
+
+.navigation ul li:nth-child(1)
+{    
+    text-align: center;
+}
+
+#active{
+    
+    background-color: #c7acc6;
+    color:white;
+    
+}
+
+hr
+{
+	height:2px;
+	width:80%;
+	color: #ccc;
+}
+
+.controls
+{    
+    padding:0 2rem;
+
+}
+
+.nav-flex
+{
+	
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	
+}
+
+.bgmain
+{
+	display: flex;
+    flex-direction: column;	
+	padding:0 0; 
+	
+}
+
+.new
+{	
+    display: flex;
+    flex-direction: column;
+	float:left;
+    padding:2rem 2rem;    
+}
+
+.new.post
+{	
+	display: flex;
+    flex-direction: row;	
+}
+
+.post figure
+{	
+	float:left;	
+}
+
+.post figcaption
+{
+	text-align:center;
+}
+.post img
+{
+		text-align: center;
+		max-width:100%;
+		width:380px;
+		height:300px;
+		object-fit: cover;	
+}
+
+
+.new h2
+{	
+	text-align: center;
+}
+
+.service-section
+{
+		text-align: center;
+		display: grid;	
+		margin-top:1rem;	
+}
+
+
+.service-box
+{
+		width:100%;
+		border-radius: 3%;
+}
+
+
+.service-box img
+{		
+		max-width:100%;
+		width:380px;
+		height:300px;
+		object-fit: cover;		
+}
+
+
+
+.row-two
+{
+		display:grid;
+}
+
+
+.portfolio-style
+{	
+		margin-bottom: 5%;
+}
+
+.footer
+{    
+		display: grid;
+		grid-template-rows: auto auto;
+		overflow: hidden;
+		background-color:#c7acc6;
+		text-align: center;
+		color:blue;
+		padding:1.5rem 1rem;
+    
+}
+
+.footer ul
+{    
+    	list-style: none;    
+}
+
+.footer ul li
+{    
+		display: inline;
+		padding:0 10px; 
+}
+
+@media screen and (min-width: 50rem)
+{
+    
+     body
+	{        
+        font-size: 1rem;
+        max-width:1600px;
+		background-color:#fbd6b7;
+    }
+    
+  
+        
+    .navigation ul li
+	{    
+        display: inline;
+        padding:0 10px; 
+		
+    }  
+    
+    .rule
+	{    
+        margin: 1% 16%;
+    }
+    
+    .controls
+	{    
+        padding:0 2rem;
+    } 
+    
+    .new
+	{    
+        display: flex;
+        flex-direction: column;
+        padding:1% 15%;    
+    }
+	
+	.bgmain
+	{
+		display: flex;
+    	flex-direction: column;	
+    	padding:0 1.2rem; 
+		margin-bottom: 10%;
+	}
+    
+    
+	
+   .row-two
+	{
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 10px;
+	}
+
+
+	.social-section
+	{
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 10px;
+		padding:3% 5%;		
+		text-align: center;	
+	}	
+	
+	
+	.portfolio-style
+	{	
+		margin-bottom: 2%;
+	}
+	
+	.btn
+	{    
+		width:35%;
+		height:50px;		
+	}
+    
+}
+
+
+@media screen and (min-width: 80rem)
+{
+    
+    
+	
+	.row-two
+	{
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 10px;
+	}
+
+
+	.social-section
+	{
+
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 10px;
+		padding:3% 5%;		
+		text-align: center;	
+		
+
+	}
+	
+	
+	.bgmain
+	{
+		display: flex;
+    	flex-direction: column;	
+    	padding:0 8%; 
+		margin-bottom: 8%;
+	}
+	
+    
+    .btn
+	{    
+		width:30%;
+		height:50px;
+		
+	}
+	
+	.controls
+	{
+		text-align: center;
+	}
+    
+    
+}
